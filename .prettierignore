@@ -1,0 +1,5 @@
+__generated__/
+coverage/
+docs/
+node_modules/
+web-build/
