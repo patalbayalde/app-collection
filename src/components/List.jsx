@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { memo, useContext } from 'react';
 
-export default function List({ context }) {
+function List({ context }) {
   const { list } = useContext(context);
 
   return (
@@ -15,3 +15,6 @@ export default function List({ context }) {
     </div>
   );
 }
+
+const MemoizedList = memo(List);
+export default MemoizedList;
